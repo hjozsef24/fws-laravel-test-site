@@ -10,13 +10,16 @@
 			</button>
 		</div>
 
-		<form class="mt-8 flex flex-col gap-5">
+		<form class="js-contact-form mt-8 flex flex-col gap-5">
+			@csrf
 			<div>
 				<label for="name" class="font-mono text-xs text-[#16161A]">
 					Név
 				</label>
 
 				<input type="text" id="name" name="name" class="mt-2 w-full border border-[#16161A] px-4 py-3">
+
+				<p class="js-form-error mt-2 hidden text-xs text-red-600" data-field="name"></p>
 			</div>
 
 			<div>
@@ -25,6 +28,8 @@
 				</label>
 
 				<input type="email" id="email" name="email" class="mt-2 w-full border border-[#16161A] px-4 py-3">
+
+				<p class="js-form-error mt-2 hidden text-xs text-red-600" data-field="email"></p>
 			</div>
 
 			<div>
@@ -32,13 +37,18 @@
 					Üzenet
 				</label>
 
-				<textarea id="message" name="message" rows="5" class="mt-2 w-full border border-[#16161A] px-4 py-3"></textarea>
+				<textarea maxlength="255" id="message" name="message" rows="5"
+				 class="mt-2 w-full border border-[#16161A] px-4 py-3"></textarea>
+
+				<p class="js-form-error mt-2 hidden text-xs text-red-600" data-field="message"></p>
 			</div>
 
 			<button type="submit"
-				class="cursor-pointer border border-[#16161A] bg-[#16161A] px-4 py-3 font-mono text-xs font-normal leading-5 tracking-wide text-white">
+				class="cursor-pointer border border-[#16161A] bg-[#16161A] px-4 py-3 font-mono text-xs font-normal leading-5 tracking-wide text-white disabled:cursor-default disabled:opacity-80">
 				Üzenet küldése
 			</button>
+
+			<p class="js-form-message hidden text-sm"></p>
 		</form>
 	</div>
 </div>
