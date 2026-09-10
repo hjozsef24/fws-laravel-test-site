@@ -48,8 +48,7 @@
 	</div>
 
 	<div class="mx-auto mt-14 max-w-screen-2xl border-t border-[#FFFFFF1F] pt-6 pb-8">
-		<div
-			class="flex items-center justify-between font-mono text-xs font-normal leading-5 tracking-wide text-[#75757E]">
+		<div class="flex items-center justify-between font-mono text-xs font-normal leading-5 tracking-wide text-[#75757E]">
 			<p>© 2026 Minden jog fenntartva.</p>
 
 			<div class="flex gap-4">

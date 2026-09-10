@@ -25,6 +25,8 @@
 	</main>
 
 	@include('shared.footer')
+
+	<x-contact-modal />
 </body>
 
 </html>

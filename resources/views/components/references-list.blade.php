@@ -1,5 +1,5 @@
 <div class="mx-auto max-w-screen-2xl py-28">
-	<h2 class="font-sans text-4xl font-bold leading-none tracking-tight">
+	<h2 class="font-grotesk text-5xl font-bold leading-none tracking-tight">
 		Munkáink
 	</h2>
 

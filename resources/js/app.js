@@ -1,1 +1,3 @@
-import './bootstrap';
+import contactModal from "./contact-modal";
+
+contactModal();
