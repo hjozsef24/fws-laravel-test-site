@@ -5,7 +5,7 @@
 		</a>
 
 		<div class="flex gap-8">
-			<a class="font-mono text-xs font-normal leading-5 tracking-wider">
+			<a href="#references" class="font-mono text-xs font-normal leading-5 tracking-wider">
 				Munkáink
 			</a>
 

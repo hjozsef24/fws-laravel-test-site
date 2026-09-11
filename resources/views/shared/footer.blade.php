@@ -16,7 +16,7 @@
 			</h3>
 
 			<nav class="mt-5 flex flex-col gap-4">
-				<a class="font-sans text-sm font-normal leading-6 text-[#C2C2C8]">
+				<a href="#references" class="font-sans text-sm font-normal leading-6 text-[#C2C2C8]">
 					Munkáink
 				</a>
 
@@ -49,7 +49,7 @@
 
 	<div class="mx-auto mt-14 max-w-screen-2xl border-t border-[#FFFFFF1F] pt-6 pb-8">
 		<div class="flex items-center justify-between font-mono text-xs font-normal leading-5 tracking-wide text-[#75757E]">
-			<p>© 2026 Minden jog fenntartva.</p>
+			<p>© 2026 FÉM Stúdió — Minden jog fenntartva</p>
 
 			<div class="flex gap-4">
 				<a href="#">Adatvédelem</a>

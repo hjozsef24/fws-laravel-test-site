@@ -1,4 +1,4 @@
-<div class="mx-auto max-w-screen-2xl py-28">
+<div class="mx-auto max-w-screen-2xl py-28" id="references">
 	<h2 class="font-grotesk text-5xl font-bold leading-none tracking-tight">
 		Munkáink
 	</h2>
