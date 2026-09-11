@@ -16,11 +16,11 @@ class ReferencesTable
         return $table
             ->columns([
                 ImageColumn::make('image')
-                    ->label('Kép')
+                    ->label('Image')
                     ->disk('public'),
 
                 TextColumn::make('title')
-                    ->label('Cím')
+                    ->label('Title')
                     ->searchable(),
             ])
             ->filters([

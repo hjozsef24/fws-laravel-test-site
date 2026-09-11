@@ -18,7 +18,7 @@ class ContactMessagesTable
                 TextColumn::make('name')
                     ->searchable(),
                 TextColumn::make('email')
-                    ->label('Email address')
+                    ->label('E-mail address')
                     ->searchable(),
                 TextColumn::make('created_at')
                     ->dateTime()
