@@ -3,20 +3,28 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ContactRequest;
+use App\Mail\ContactMail;
 use App\Models\ContactMessage;
+use App\Models\User;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
-	public function store(ContactRequest $request)
-	{
-		$validated = $request->validated();
+    public function store(ContactRequest $request)
+    {
+        $validated = $request->validated();
 
-		ContactMessage::create($validated);
+        ContactMessage::create($validated);
 
-        // @TODO: Send e-mail for the admin users
+        $admins = User::query()->get();
 
-		return response()->json([
-			'message' => 'Sikeres üzenetküldés.',
-		]);
-	}
+        foreach ($admins as $admin) {
+            Mail::to($admin->email)
+                ->send(new ContactMail($validated));
+        }
+
+        return response()->json([
+            'message' => 'Sikeres üzenetküldés.',
+        ]);
+    }
 }

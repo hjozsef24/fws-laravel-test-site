@@ -16,7 +16,7 @@
 			</h3>
 
 			<nav class="mt-5 flex flex-col gap-4">
-				<a href="#references" class="font-sans text-sm font-normal leading-6 text-[#C2C2C8]">
+				<a class="font-sans text-sm font-normal leading-6 text-[#C2C2C8]">
 					Munkáink
 				</a>
 
