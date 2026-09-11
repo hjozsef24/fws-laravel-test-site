@@ -5,9 +5,13 @@
 
 	<div class="mt-9 mb-12 border-t border-[#E4E4E0]"></div>
 
-	<div class="flex flex-wrap gap-8">
-		@for ($i = 0; $i < 4; $i++)
-			<x-references-card />
-		@endfor
-	</div>
+	@if ($references->isNotEmpty())
+		<div class="flex flex-wrap gap-8">
+			@foreach ($references as $reference)
+				<x-references-card :reference="$reference" />
+			@endforeach
+		</div>
+	@else
+		<p class="text-lg">Feltöltés alatt.</p>
+	@endif
 </div>
